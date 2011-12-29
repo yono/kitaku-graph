@@ -1,0 +1,26 @@
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <title>きたくグラフ</title>
+     <!--[if IE]!><script language="javascript" type="text/javascript" src="excanvas.js"></script><![endif]-->
+     <script language="javascript" type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+     <script language="javascript" type="text/javascript" src="/js/jquery.jqplot.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="/css/jquery.jqplot.min.css" />
+     <script type="text/javascript">
+       $(document).ready(function() {
+           var plot1 = $.jqplot('chardiv',[[3,7,9,1,4,6,8,2,5]], {});
+       });
+     </script>
+  </head>
+  <body>
+    <div id="chardiv"></div>
+    <ul>
+      <p>
+      私（<a href="http://twitter.com/yono">@yono</a>）がツイッターでつぶやいた「きたく」ツイートを集計してグラフ化しました。
+      </p>
+      <p>
+      横軸は日付、縦軸は18時（定時）からの経過時間（分）です。
+      </p>
+    </ul>
+  </body>
+</html>
