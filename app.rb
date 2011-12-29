@@ -1,7 +1,6 @@
 require 'date'
 require 'json'
 require 'sinatra'
-require 'coffee-script'
 require 'erb'
 require 'dm-core'
 require 'dm-migrations'
