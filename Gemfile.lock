@@ -2,10 +2,20 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.6)
+    data_objects (0.10.7)
+      addressable (~> 2.1)
     dm-core (1.2.0)
       addressable (~> 2.2.6)
+    dm-do-adapter (1.2.0)
+      data_objects (~> 0.10.6)
+      dm-core (~> 1.2.0)
     dm-migrations (1.2.0)
       dm-core (~> 1.2.0)
+    dm-sqlite-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_sqlite3 (~> 0.10.6)
+    do_sqlite3 (0.10.7)
+      data_objects (= 0.10.7)
     rack (1.4.0)
     rack-protection (1.1.4)
       rack
@@ -21,4 +31,5 @@ PLATFORMS
 DEPENDENCIES
   dm-core
   dm-migrations
+  dm-sqlite-adapter
   sinatra
