@@ -13,15 +13,15 @@ Twitter で @yono が「きたく」とつぶやいた時刻をグラフにし�
 
 Install Ruby.
 
-  $ rvm install 1.9.3
-  $ rvm use 1.9.3
-  $ rvm gemset create kitakugraph
-  $ rvm gemset use kitakugraph
+    $ rvm install 1.9.3
+    $ rvm use 1.9.3
+    $ rvm gemset create kitakugraph
+    $ rvm gemset use kitakugraph
 
 Install gems.
 
-  $ bundle install
+    $ bundle install
 
 ## Usage
 
-  $ ruby app.rb
+    $ ruby app.rb
