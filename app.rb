@@ -19,6 +19,11 @@ get '/' do
   erb :index
 end
 
+post '/' do
+  kitakutime = KitakuTime.create(:minute => params[:minute],
+                                 :target_date => params[:target_date])
+end
+
 get '/index.json' do
   content_type :json
   kitakutime = KitakuTime.all(:order => [:target_date.desc])
