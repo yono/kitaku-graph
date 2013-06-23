@@ -4,24 +4,15 @@ Twitter で @yono が「きたく」とつぶやいた時刻をグラフにし�
 
 ## Requirements
 
-- RVM
-- Ruby 1.9.3
-- RubyGems
-  - bundler
+- Ruby 2.0.0
+- bundler
 
 ## Install
 
-Install Ruby.
-
-    $ rvm install 1.9.3
-    $ rvm use 1.9.3
-    $ rvm gemset create kitakugraph
-    $ rvm gemset use kitakugraph
-
 Install gems.
 
-    $ bundle install
+    $ bundle install --path vendor/bundle
 
 ## Usage
 
-    $ ruby app.rb
+    $ bundle exec ruby app.rb
